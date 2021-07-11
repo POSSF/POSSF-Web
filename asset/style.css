@@ -1674,6 +1674,10 @@ header nav.active li {
 
 }
 
+ul.post-list li {
+	margin-bottom: 10px;
+}
+
 /* RTL LTR */
 html[lang=en] h1, html[lang=en] h2, html[lang=en] h3, html[lang=en] h4, html[lang=en] h5, html[lang=en] h6, html[lang=en] p, html[lang=en] li {
 	direction: ltr !important;
