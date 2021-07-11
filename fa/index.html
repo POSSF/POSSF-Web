@@ -110,10 +110,10 @@
       <h1 class="gradient-text main-title">جشنواره اوپن‌سورس فارسی</h1>
       <p>
          برای اولین بار جشنواره‌ای در سطح کشوری و بین المللی اجرا شده است که به فارسی زبان‌هایی که به جامعه متن‌باز و اوپن‌سورس کمک می‌کنند و در این راه مشارکت می‌کنند هدیه و جوایزی اهدا می‌کند.
-         <a class="underline" href="//register/">ثبت‌نام در جشنواره</a>
+         <a class="underline" href="/fa/register/">ثبت‌نام در جشنواره</a>
       </p>
       <br />
-      <a href="//register/" class="button">عضویت</a>
+      <a href="/fa/register/" class="button">عضویت</a>
    </div>
 </section>
 <hr class="gradient" />
@@ -121,30 +121,43 @@
 <section class="speakers">
    <h1>سخنران های کلیدی جشنواره اوپن سورس</h1>
    <ul class="speaker-list">
-      <li>
-         <a href="speaker.html">
-            <img alt="جادی میرمیرانی" src="/asset/image/jadi_mirmirani.jpg" />
-            <h3></h3>
-            <h4>جادی میرمیرانی</h4>
-            <h5>هکر خندون، برنامه نویس خوشحال، مدیرسیستم</h5>
-         </a>
-      </li>
-      <li>
-         <a href="speaker.html">
-            <img alt="سید علی محمدیه" src="https://i.pravatar.cc/150?img=58" />
-            <h3></h3>
-            <h4>سید علی محمدیه</h4>
-            <h5>مهندس نرم‌افزار و توسعه دهنده شرکت گیت هاب</h5>
-         </a>
-      </li>
-      <li>
-         <a href="speaker.html">
-            <img alt="سید پرهام الوانی" src="/asset/image/seyyed_parham_alvani.jpg" />
-            <h3></h3>
-            <h4>سید پرهام الوانی</h4>
-            <h5>دانشجوی دکتری، برنامه نویس شرکت اسنپ</h5>
-         </a>
-      </li>
+      
+         <li>
+            <a href="/fa/speakers/jadi-mirmirani/">
+               <img src="/asset/image/jadi_mirmirani.jpg" alt="جادی میرمیرانی" />
+               <h3></h3>
+               <h4>جادی میرمیرانی</h4>
+               <h5>هکر خندون، برنامه نویس خوشحال، مدیرسیستم</h5>
+            </a>
+         </li>
+      
+         <li>
+            <a href="/fa/speakers/seyyed-ali-mohammadiyeh/">
+               <img src="/asset/image/seyyed-ali-mohammadiyeh.jpg" alt="سیدعلی محمدیه" />
+               <h3></h3>
+               <h4>سیدعلی محمدیه</h4>
+               <h5>مهدس نرم افزار و توسعه دهنده گیت هاب</h5>
+            </a>
+         </li>
+      
+         <li>
+            <a href="/fa/speakers/seyyed-parham-alvani/">
+               <img src="/asset/image/seyyed_parham_alvani.jpg" alt="سید پرهام الوانی" />
+               <h3></h3>
+               <h4>سید پرهام الوانی</h4>
+               <h5>دانشجوی دکتری، مهندس نرم افزار شرکت اسنپ</h5>
+            </a>
+         </li>
+      
+         <li>
+            <a href="/fa/speakers/john-bampton/">
+               <img src="/asset/image/john-bampton.jpg" alt="جان باپتون" />
+               <h3>ابزار های GNU</h3>
+               <h4>جان باپتون</h4>
+               <h5>رهبر تیم، مهندس روابط توسعه دهندگان</h5>
+            </a>
+         </li>
+      
    </ul>
 </section>
 <section class="attends">
@@ -169,16 +182,17 @@
    </div>
    <!-- <h4 class="text-gradient-purple">از بهترین ها بیاموزید</h4>
       <p>Three channels of content dedicated to developers, enterprise teams, and college students.</p>
-      
+
       <h4 class="text-gradient-purple">جدیدترین ها را دریافت کنید</h4>
       <p>New product announcements and deep dives.</p>
-      
+
       <h4 class="text-gradient-purple">به فراتر از محتوا وصل شوید</h4>
       <p>Networking and learning opportunities, from Workshops to mentoring sessions.</p>
-      
+
       <h4 class="text-gradient-purple">در طول راه از آن لذت ببرید</h4>
       <p>Musical performances inspired by code and a few more surprises to come!</p> -->
 </section>
+
 <hr class="gradient" />
 
 <section class="subscribe">
@@ -187,12 +201,24 @@
    </p>
    <br />
    <div class="reg-btn sub-btn-size">
-      <a href="//subscribe/" class="button">مشترک شدن</a>
+      <a onclick="subscribe();" class="button">مشترک شدن</a>
    </div>
-   <!-- <a href="contact.html" class="button" target="_blank">
-      <span>Subscribe for updates</span>
-      </a> -->
 </section>
+
+<div id="dialog-subscribe-background" class=""></div>
+<div id="dialog-subscribe">
+   <div id="dialog-subscribe-box">
+      <img onclick="subscribe_close(this.parentElement.parentElement);" id="dialog-subscribe-close" src="/asset/close.svg" />
+      <div id="dialog-subscribe-form">
+         <center>
+            Enter your email for updates
+         </center>
+         <input id="dialog-subscribe-email" type="email" name="email" />
+         <img id="dialog-subscribe-button" oncancel="subscribe_submit(this.parentElement.parentElement.parentElement);" src="/asset/send.svg" />
+      </div>
+   </div>
+</div>
+
 <hr class="gradient" />
 
 <div class="page-box-content">
@@ -205,7 +231,7 @@
       <ul class="post-list">
          <li>
             <h2>
-               <a class="post-link" href="//post/" title="اپن سورس، یک دروغ تجاری قابل باور">اپن سورس، یک دروغ تجاری قابل باور</a>
+               <a class="post-link" href="/fa/post/" title="اپن سورس، یک دروغ تجاری قابل باور">اپن سورس، یک دروغ تجاری قابل باور</a>
             </h2>
             <span>
                <p>دوست عزیز ما بابک مقیمی مقاله ای در مورد آزادراه منتشر کرده است که می تواند نقطه شروع خوبی برای یک مقاله کامل در مورد منبع آزاد و رویکردهای اجتماعی...</p>
@@ -213,7 +239,7 @@
          </li>
          <li>
             <h2>
-               <a class="post-link" href="//post/" title="اهدف جشنواره نرم افزار آزاد/اوپن سورس فارسی">اهدف جشنواره نرم افزار آزاد/اوپن سورس فارسی</a>
+               <a class="post-link" href="/fa/post/" title="اهدف جشنواره نرم افزار آزاد/اوپن سورس فارسی">اهدف جشنواره نرم افزار آزاد/اوپن سورس فارسی</a>
             </h2>
             <span>
                <p>در این مطلب اهداف جشنواره اوپن سورس و چشم انداز های جشنواره نرم افزار آزاد را توضیح میدهیم و می خواهیم شفاف سازی های لازم را انجام دهیم.</p>
@@ -221,7 +247,7 @@
          </li>
          <li>
             <h2>
-               <a class="post-link" href="//post/" title="سلام دنیا - جشنواره اوپن سورس فارسی">سلام دنیا - جشنواره اوپن سورس فارسی</a>
+               <a class="post-link" href="/fa/post/" title="سلام دنیا - جشنواره اوپن سورس فارسی">سلام دنیا - جشنواره اوپن سورس فارسی</a>
             </h2>
             <span>
                <p>سلام دنیا، عبارتی است که اصولا برنامه نویس ها و کاربران رایانه ها در اولین تجربه خود با زبان های برنامه نویسی آن را بیان می کنند. این بار از...</p>
@@ -231,6 +257,7 @@
       <br /><br />
    </div>
 </div>
+
 <hr class="gradient" />
 
 <section class="sponsors">
@@ -304,16 +331,45 @@
       </div>
       
    </div>
-   <p>مایل به <a class="underline" href="//contact/">پشتیبانی</a> از جشنواره اوپن سورس فارسی هستید؟</p>
+   <p>مایل به  <a class="underline" href="/fa/contact/">پشتیبانی</a>  از جشنواره اوپن سورس فارسی هستید؟</p>
    <br />
    <div class="reg-btn connect-btn-size">
-      <a href="//contact/" class="button">تماس با ما</a>
+      <a href="/fa/contact/" class="button">تماس با ما</a>
    </div>
 </section>
 
 
 
-  <footer>
+
+  
+<footer>
+
+    <section class="updates">
+        <!-- <p class="signup-text"><a class="underline" href="">Sign up</a> for the latest POSSF updates</p> -->
+        <p class="follow-text">Follow the event <span class="text-gradient-purple">#POSSF</span></p>
+        <ul class="linear-list">
+            <li>
+                <a href="https://twitter.com/possf_ir/">
+                    <img src="/asset/twitter.svg">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.linkedin.com/in/possf/">
+                    <img src="/asset/linkedin.svg">
+                </a>
+            </li>
+            <li>
+                <a href="https://instagram.com/possf_ir/">
+                    <img src="/asset/instagram.svg">
+                </a>
+            </li>
+            <li>
+                <a href="https://www.youtube.com/channel/UCvot9gY0qHT_L6ivS_Uh9GQ">
+                    <img src="/asset/youtube.svg">
+                </a>
+            </li>
+        </ul>
+    </section>
 
     <div class="content-footer">
         <ul class="linear-list">
