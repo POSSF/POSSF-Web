@@ -2,6 +2,7 @@
 <html lang="fa" dir="rtl">
 
   <head>
+    <!-- rtl -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="google-site-verification" content="yjzAdGvHDGnABvgQ2Tcec-Ugeejd7u7jCyfg0aixSw0">
@@ -68,26 +69,16 @@
     <link type="text/css" rel="stylesheet" href="/asset/style.css">
 
 </head>
-<body>
+<body class="body-speaker">
 
   <!-- <header style="position: fixed;top: 0;z-index: 200;"> -->
 <header>
 
-    <div>
+    <div id="header-logo">
         <a href="/fa"><img alt="1th Persian Open-Source Software festival" class="logo" src="/asset/logo.svg"></a>
-        <div class="time">جمعه، ۹ مهر ۱۴۰۰</div>
     </div>
 
-    <!--
-    <div class="countdown-time">
-        <span class="d">70</span> d ::
-        <span class="h">1</span> h ::
-        <span class="m">48</span> m ::
-        <span class="s">6</span> s
-    </div>
-    -->
-
-    <nav>
+    <nav id="header-nav">
         <li class="active"><a href="/fa/register/">ثبت نام</a></li>
         <li><a href="/fa/speakers/">سخنران ها</a></li>
         <li><a href="/fa/workshops/">کارگاه ها</a></li>
@@ -96,7 +87,19 @@
         <li><a href="/fa/contact/">تماس با ما</a></li>
     </nav>
 
-    <div class="small-nav-icon">
+    <div id="header-info">
+        <div class="time">جمعه، ۹ مهر ۱۴۰۰</div>
+        <!--
+        <div class="countdown-time">
+            <span class="d">70</span> d ::
+            <span class="h">1</span> h ::
+            <span class="m">48</span> m ::
+            <span class="s">6</span> s
+        </div>
+        -->
+    </div>
+
+    <div id="header-nav-button" class="small-nav-icon">
         <div class="line-icon"></div>
         <div class="line-icon"></div>
         <div class="line-icon"></div>
@@ -116,6 +119,7 @@
       <a href="/fa/register/" class="button">عضویت</a>
    </div>
 </section>
+
 <hr class="gradient" />
 
 <section class="speakers">
@@ -125,17 +129,17 @@
          <li>
             <a href="/fa/speakers/jadi-mirmirani/">
                <img src="/asset/image/jadi_mirmirani.jpg" alt="جادی میرمیرانی" />
-               <h3></h3>
+               <h3>Philosophy and History of Open Source</h3>
                <h4>جادی میرمیرانی</h4>
                <h5>هکر خندون، برنامه نویس خوشحال، مدیرسیستم</h5>
             </a>
          </li>
       
          <li>
-            <a href="/fa/speakers/seyyed-ali-mohammadiyeh/">
-               <img src="/asset/image/seyyed-ali-mohammadiyeh.jpg" alt="سیدعلی محمدیه" />
-               <h3></h3>
-               <h4>سیدعلی محمدیه</h4>
+            <a href="/fa/speakers/max-base/">
+               <img src="/asset/image/max-base.jpg" alt="مکس بیس" />
+               <h3>چرا باید در پروژه های متن باز مشارکت کنید؟</h3>
+               <h4>مکس بیس</h4>
                <h5>مهدس نرم افزار و توسعه دهنده گیت هاب</h5>
             </a>
          </li>
@@ -152,7 +156,7 @@
          <li>
             <a href="/fa/speakers/john-bampton/">
                <img src="/asset/image/john-bampton.jpg" alt="جان باپتون" />
-               <h3>ابزار های GNU</h3>
+               <h3>آزادی، نرم افزار GNU و تیم سازی</h3>
                <h4>جان باپتون</h4>
                <h5>رهبر تیم، مهندس روابط توسعه دهندگان</h5>
             </a>
@@ -160,37 +164,27 @@
       
    </ul>
 </section>
+
 <section class="attends">
    <h2>چرا در جشنواره شرکت کنیم؟</h2>
    <div class="attends-box">
       <div class="grid-attends">
          <h4>از بهترین ها بیاموزید</h4>
-         <p>Three channels of content dedicated to developers, enterprise teams, and college students.</p>
+         <p>سه کانال محتوای اختصاص داده شده به توسعه دهندگان ، تیم های سازمانی و دانشجویان.</p>
       </div>
       <div class="grid-attends">
          <h4>جدیدترین ها را دریافت کنید</h4>
-         <p>New product announcements and deep dives.</p>
+         <p>اعلامیه محصولات جدید و غواصی های عمیق.</p>
       </div>
       <div class="grid-attends">
          <h4>به فراتر از محتوا وصل شوید</h4>
-         <p>Networking and learning opportunities, from Workshops to mentoring sessions.</p>
+         <p>فرصت های شبکه سازی و یادگیری ، از کارگاه ها گرفته تا جلسات مربیگری.</p>
       </div>
       <div class="grid-attends">
          <h4>در طول راه از آن لذت ببرید</h4>
-         <p>Musical performances inspired by code and a few more surprises to come!</p>
+         <p>اجراهای موسیقی با الهام از کد و چند شگفتی دیگر در آینده!</p>
       </div>
    </div>
-   <!-- <h4 class="text-gradient-purple">از بهترین ها بیاموزید</h4>
-      <p>Three channels of content dedicated to developers, enterprise teams, and college students.</p>
-
-      <h4 class="text-gradient-purple">جدیدترین ها را دریافت کنید</h4>
-      <p>New product announcements and deep dives.</p>
-
-      <h4 class="text-gradient-purple">به فراتر از محتوا وصل شوید</h4>
-      <p>Networking and learning opportunities, from Workshops to mentoring sessions.</p>
-
-      <h4 class="text-gradient-purple">در طول راه از آن لذت ببرید</h4>
-      <p>Musical performances inspired by code and a few more surprises to come!</p> -->
 </section>
 
 <hr class="gradient" />
@@ -205,15 +199,15 @@
    </div>
 </section>
 
-<div id="dialog-subscribe-background" class=""></div>
+<div id="dialog-subscribe-background"></div>
 <div id="dialog-subscribe">
    <div id="dialog-subscribe-box">
       <img onclick="subscribe_close(this.parentElement.parentElement);" id="dialog-subscribe-close" src="/asset/close.svg" />
       <div id="dialog-subscribe-form">
          <center>
-            Enter your email for updates
+            آدرس ایمیل خود را وارد کنید
          </center>
-         <input id="dialog-subscribe-email" type="email" name="email" />
+         <input id="dialog-subscribe-email" type="email" name="email" placeholder="your-mail@possf.ir" />
          <img id="dialog-subscribe-button" oncancel="subscribe_submit(this.parentElement.parentElement.parentElement);" src="/asset/send.svg" />
       </div>
    </div>
@@ -346,7 +340,7 @@
 
     <section class="updates">
         <!-- <p class="signup-text"><a class="underline" href="">Sign up</a> for the latest POSSF updates</p> -->
-        <p class="follow-text">Follow the event <span class="text-gradient-purple">#POSSF</span></p>
+        <p class="follow-text">رویداد را دنبال کنید <span class="text-gradient-purple">#POSSF</span></p>
         <ul class="linear-list">
             <li>
                 <a href="https://twitter.com/possf_ir/">
@@ -401,7 +395,7 @@
         <a href="/fa/">
             <img alt="Persian Open Source Software Festival" class="logo" src="/asset/logo-icon.svg">
         </a>
-        <p class="copyright">شرکت گیت هاب © 2021، تمام حقوق محفوظ است.</p>
+        <p class="copyright">© گیت هاب ۱۴۰۰. تمامی حقوق محفوظ است.</p>
     </div>
 
 </footer>

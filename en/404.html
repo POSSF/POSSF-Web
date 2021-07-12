@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html lang="en" dir="rtl">
+<html lang="en" dir="ltr">
 
   <head>
+    <!-- rtl -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="google-site-verification" content="yjzAdGvHDGnABvgQ2Tcec-Ugeejd7u7jCyfg0aixSw0">
@@ -73,21 +74,11 @@
   <!-- <header style="position: fixed;top: 0;z-index: 200;"> -->
 <header>
 
-    <div>
+    <div id="header-logo">
         <a href="/en"><img alt="1th Persian Open-Source Software festival" class="logo" src="/asset/logo.svg"></a>
-        <div class="time">Friday, October 1, 2021</div>
     </div>
 
-    <!--
-    <div class="countdown-time">
-        <span class="d">70</span> d ::
-        <span class="h">1</span> h ::
-        <span class="m">48</span> m ::
-        <span class="s">6</span> s
-    </div>
-    -->
-
-    <nav>
+    <nav id="header-nav">
         <li class="active"><a href="/en/register/">Register</a></li>
         <li><a href="/en/speakers/">Speakers</a></li>
         <li><a href="/en/workshops/">Workshops</a></li>
@@ -96,7 +87,19 @@
         <li><a href="/en/contact/">Contact</a></li>
     </nav>
 
-    <div class="small-nav-icon">
+    <div id="header-info">
+        <div class="time">Friday, October 1, 2021</div>
+        <!--
+        <div class="countdown-time">
+            <span class="d">70</span> d ::
+            <span class="h">1</span> h ::
+            <span class="m">48</span> m ::
+            <span class="s">6</span> s
+        </div>
+        -->
+    </div>
+
+    <div id="header-nav-button" class="small-nav-icon">
         <div class="line-icon"></div>
         <div class="line-icon"></div>
         <div class="line-icon"></div>
@@ -156,16 +159,16 @@
     <div class="content-footer">
         <ul class="linear-list">
             <li>
-                <a href="/en/code-of-conduct/">آیین نامه رفتار</a>
+                <a href="/en/code-of-conduct/">Code of conduct</a>
             </li>
             <li>
-                <a href="/en/terms/">مقررات</a>
+                <a href="/en/terms/">Terms</a>
             </li>
             <li>
-                <a href="/en/privacy/">حریم خصوصی</a>
+                <a href="/en/privacy/">Privacy</a>
             </li>
             <li>
-                <a href="/en/sponsors/">حامیان جشنواره</a>
+                <a href="/en/sponsors/">Sponsors</a>
             </li>
             <!--
                 <li>
@@ -173,7 +176,7 @@
                 </li>
                 -->
             <li>
-                <a href="/en/team/">دست اندرکاران</a>
+                <a href="/en/team/">Team</a>
             </li>
             <li>
                 <a href="/en/contact/">info @ possf.ir</a>
